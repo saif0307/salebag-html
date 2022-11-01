@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salebag</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="max-w-[1480px] mx-auto">
+      <div class="bg-black cursor-pointer p-2 z-0">
+        <ul class="flex gap-4">
+          <img src="Images/facebook.png" alt="" class="w-[25px]" />
+          <img src="Images/instagram.png" alt="" class="w-[25px]" />
+          <img src="Images/twitter.png" alt="" class="w-[25px]" />
+        </ul>
+      </div>
+      <div
+        class="flex flex-col w-full justify-center items-center gap-4 md:px-12 z-0"
+      >
+        <div class="flex justify-center p-4">
+          <p class="text-6xl font-bold">Sale</p>
+          <p class="text-6xl">Bag</p>
+        </div>
+        <div
+          class="w-full bg-white flex flex-col md:flex-row justify-between items-center relative py-2"
+        >
+          <div class="flex gap-4">
+            <img
+              src="Images/menu_icon.svg"
+              alt="menuicon"
+              class="w-[20px] py-2 block md:hidden w-full mx-auto"
+              id="menuIcon"
+            />
+            <img
+              src="Images/searchicon.svg"
+              alt="menuicon"
+              class="w-[20px] py-2 block md:hidden w-full mx-auto"
+              id="searchIcon"
+            />
+          </div>
+          <div>
+            <ul
+              class="text-lg font-semibold cursor-pointer absolute -left-[1200px] z-10 md:left-0 md:relative bg-white md:flex justify-start w-full"
+              id="brandsList"
+            >
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Zara
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Gap
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Next
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                M&S
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Levis
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Mango
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                H&M
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Pull & Bear
+              </li>
+            </ul>
+          </div>
+          <div
+            class="border flex gap-2 px-2 items-center hidden md:flex w-full max-w-[350px] z-20 bg-white"
+            id="searchBar"
+          >
+            <img
+              src="Images/searchicon.svg"
+              alt="si"
+              class="w-[20px] opacity-20"
+            />
+            <input
+              type="text"
+              placeholder="search"
+              class="h-[40px] focus:outline-none hover:border-0 w-full"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#ffdd00] h-[4px]"></div>
+      <div
+        class="flex px-2 md:px-12 w-full py-6 gap-12 bg-[#f2f2f2] flex-wrap md:flex-nowrap"
+      >
+        <div
+          class="flex flex-col gap-2 relative justify-between w-full items-center md:w-1/5 md:items-start"
+        >
+          <h3
+            class="text-xl font-bold text-white bg-black p-2 max-h-[50px] cursor-pointer"
+            id="categories"
+          >
+            Categories
+          </h3>
+          <div
+            class="flex flex-col gap-2 cursor-pointer text-lg absolute -left-[1200px] md:left-0 bg-white w-full md:bg-transparent top-[50px]"
+            id="categoriesList"
+          >
+            <p class="border-black px-2">gender</p>
+            <p class="border-black px-2">shirts</p>
+            <p class="border-black px-2">jackets</p>
+            <p class="border-black px-2">shoes</p>
+            <p class="border-black px-2">accessories</p>
+          </div>
+          <select
+            name=""
+            id=""
+            class="border-2 border-black text-black md:hidden h-[50px]"
+          >
+            <option
+              value="lowestPrice"
+              class="bg-black text-white hover:bg-white hover:text-white"
+            >
+              sort by price (lowest)
+            </option>
+            <option
+              value="highestPrice"
+              class="bg-black text-white hover:bg-white hover:text-white"
+            >
+              sort by price (highest)
+            </option>
+          </select>
+        </div>
+        <div class="flex flex-col w-full">
+          <div class="flex justify-between w-full">
+            <div>
+              <p class="font-semibold">Mens > shirts</p>
+            </div>
+            <select
+              name=""
+              id=""
+              class="border-2 border-black h-[35px] px-2 text-black hidden md:block"
+            >
+              <option
+                value="lowestPrice"
+                class="bg-black text-white hover:bg-white hover:text-white p-2 text-lg"
+              >
+                sort by price (lowest)
+              </option>
+              <option
+                value="highestPrice"
+                class="bg-black text-white hover:bg-white hover:text-white p-2 text-lg"
+              >
+                sort by price (highest)
+              </option>
+            </select>
+
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-4"
+          >
+            <div class="bg-white p-2 cursor-pointer">
+              <a href="/productpage.html">
+                <img
+                  src="Images/19102022_LauraStar-The-Reinvention-of-Ironing_Home.jpg"
+                  alt=""
+                />
+                <p>Emma premium matress</p>
+                <div class="flex justify-between">
+                  <p class="font-semibold">$250</p>
+                  <p class="text-[#F8481B]">up to 20%off</p>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white p-2 cursor-pointer">
+              <a href="/productpage.html">
+                <img src="Images/20102022_Molton-Brown_Home.jpg" alt="" />
+                <p>Emma premium matress</p>
+                <div class="flex justify-between">
+                  <p class="font-semibold">$250</p>
+                  <p class="text-[#F8481B]">up to 20%off</p>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white p-2 cursor-pointer">
+              <a href="/productpage.html">
+                <img
+                  src="Images/23102022_Luxury-1000TC-Bed-Linen_Home.webp"
+                  alt=""
+                />
+                <p>Emma premium matress</p>
+                <div class="flex justify-between">
+                  <p class="font-semibold">$250</p>
+                  <p class="text-[#F8481B]">up to 20%off</p>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white p-2 cursor-pointer">
+              <a href="/productpage.html">
+                <img
+                  src="Images/25102022_Autumn-Kitchen-Refresh_Home.jpg"
+                  alt=""
+                />
+                <p>Emma premium matress</p>
+                <div class="flex justify-between">
+                  <p class="font-semibold">$250</p>
+                  <p class="text-[#F8481B]">up to 20%off</p>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white p-2 cursor-pointer">
+              <a href="/productpage.html">
+                <img
+                  src="Images/25102022_Boss-Bedding-and-Robes_Home.jpg"
+                  alt=""
+                />
+                <p>Emma premium matress</p>
+                <div class="flex justify-between">
+                  <p class="font-semibold">$250</p>
+                  <p class="text-[#F8481B]">up to 20%off</p>
+                </div>
+              </a>
+            </div>
+            <div class="bg-white p-2 cursor-pointer">
+              <a href="/productpage.html">
+                <img
+                  src="Images/28102022_Leather-and-Linen-Statement-Seating_Home.jpg"
+                  alt=""
+                />
+                <p>Emma premium matress</p>
+                <div class="flex justify-between">
+                  <p class="font-semibold">$250</p>
+                  <p class="text-[#F8481B]">up to 20%off</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

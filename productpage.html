@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="max-w-[1480px] mx-auto">
+        <div>
+      <div class="bg-black cursor-pointer p-2 z-0">
+        <ul class="flex gap-4">
+          <img src="Images/facebook.png" alt="" class="w-[25px]" />
+          <img src="Images/instagram.png" alt="" class="w-[25px]" />
+          <img src="Images/twitter.png" alt="" class="w-[25px]" />
+        </ul>
+      </div>
+      <div
+        class="flex flex-col w-full justify-center items-center gap-4 md:px-12 z-0"
+      >
+        <div class="flex justify-center p-4">
+          <p class="text-6xl font-bold">Sale</p>
+          <p class="text-6xl">Bag</p>
+        </div>
+        <div
+          class="w-full bg-white flex flex-col md:flex-row justify-between items-center relative py-2"
+        >
+          <div class="flex gap-4">
+            <img
+              src="Images/menu_icon.svg"
+              alt="menuicon"
+              class="w-[20px] py-2 block md:hidden w-full mx-auto"
+              id="menuIcon"
+            />
+            <img
+              src="Images/searchicon.svg"
+              alt="menuicon"
+              class="w-[20px] py-2 block md:hidden w-full mx-auto"
+              id="searchIcon"
+            />
+          </div>
+          <div>
+            <ul
+              class="text-lg font-semibold cursor-pointer absolute -left-[1200px] z-10 md:left-0 md:relative bg-white md:flex justify-start w-full"
+              id="brandsList"
+            >
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Zara
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Gap
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Next
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                M&S
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Levis
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Mango
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                H&M
+              </li>
+              <li
+                class="bg-white text-black hover:text-white hover:bg-[#ffdd00] p-4"
+              >
+                Pull & Bear
+              </li>
+            </ul>
+          </div>
+          <div
+            class="border flex gap-2 px-2 items-center hidden md:flex  max-w-[350px] z-20 bg-white"
+            id="searchBar"
+          >
+            <img
+              src="Images/searchicon.svg"
+              alt="si"
+              class="w-[20px] opacity-20"
+            />
+            <input
+              type="text"
+              placeholder="search"
+              class="h-[40px] hover:border-0 w-full focus:outline-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#ffdd00] h-[4px]"></div>
+    </div>
+    <div class="px-2 md:px-12 py-4 w-full">
+        <div class="flex w-full justify-center flex-col gap-4">
+            <p>Mens > Shirts > name</p>
+        <div class="flex  gap-8 flex-wrap  md:flex-nowrap">
+        <div class="flex w-full gap-4 justify-center items-center flex-col md:flex-row md:flex-row-reverse ">
+            <div>
+                <img src="Images/20102022_Molton-Brown_Home.jpg" class="w-full" alt="">
+            </div>
+            <div class=" flex  md:flex-col max-w-[350px] justify-around h-full">
+                <img src="Images/28102022_Crew-Clothing-Mens_Home.jpg" alt="" class="max-w-[100px]">
+                <img src="Images/23102022_Luxury-1000TC-Bed-Linen_Home.webp" alt="" class="max-w-[100px]">
+                <img src="Images/25102022_Boss-Bedding-and-Robes_Home.jpg" alt="" class="max-w-[100px]">
+                <img src="Images/28102022_Leather-and-Linen-Statement-Seating_Home.jpg" alt="" class="max-w-[100px]">
+            </div>
+            </div>
+        <div class="flex flex-col gap-6">
+            <div>
+            <p class="font-bold text-xl">PRODUCT NAME</p>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repudiandae fuga quisquam nihil amet. Temporibus dolore debitis recusandae ipsam atque.</p>
+            </div>
+            <div class="flex flex-col gap-2 max-w-[200px]">
+            <p class="text-xl font-semibold">Price: $250</p>
+                <select name="" id="" class="border-2 border-black text-black  ">
+                    <option value="" class="bg-black text-white">Size</option>
+                    <option value="Large" class="">Large</option>
+                    <option value="Medium" class="">Medium</option>
+                    <option value="Small">Small</option>
+                </select>
+                <button class="p-2 bg-black rounded-full text-white hover:opacity-90">Add to cart</button>
+                <button class="p-2 bg-black rounded-full text-white hover:opacity-90">Add to favourites</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
